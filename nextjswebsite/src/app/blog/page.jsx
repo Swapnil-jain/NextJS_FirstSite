@@ -16,7 +16,6 @@ const blogPage = () => {
             <div className={styles.post}>
                 <PostCard />
             </div>
-
         </div>
     )
 }
