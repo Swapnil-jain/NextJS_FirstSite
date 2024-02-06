@@ -2,6 +2,7 @@
 import styles from "./links.module.css";
 import NavLink from "./navLink/navlink";
 import { useState } from "react";
+import Image from "next/image";
 
 const links = [
     {
@@ -52,7 +53,7 @@ const Links = () => {
                 }
             </div>
             {/*The below code is used for the menu toggle for navbar for small screens*/}
-            <button className={styles.menuButton} onClick={() => setOpen(prev => !prev)}>Menu</button>
+            <Image className={styles.menuButton} src='/menu.png' width={30} height={30} onClick={() => setOpen(prev => !prev)} />
             {
                 open &&
                 (<div className={styles.mobileLinks}>
